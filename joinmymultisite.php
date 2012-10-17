@@ -3,7 +3,7 @@
 Plugin Name: Join My Multisite
 Plugin URI: http://halfelf.org/plugins/join-my-multisite/
 Description: Allow logged in users to add themselves to sites (or auto-add them to all sites).
-Version: 1.0
+Version: 1.1
 Author: Mika Epstein (Ipstenu)
 Author URI: http://ipstenu.org/
 Network: true
@@ -33,25 +33,16 @@ class JMM {
 
     function init() {
         $jmm_options = get_option( 'helfjmm_options' );
-		if ( isset($_GET['settings-updated']) && ( $_GET['page'] ==
-'jmm' ) ) { 
-            add_action('admin_notices', array('JMM','updateMessage'));
-            if ( $jmm_options['role'] != get_option( 'default_user_role' ) )
-                { update_option(default_user_role, $jmm_options['role']); }
-        }
-        
+
+        // If nothing's set
         if ( !isset($jmm_options['type']) ) {
         	$jmm_options['type'] = '3'; // 3 = keep things the same
         	$jmm_options['role'] = 'subscriber'; // default to the lowest role possible
-        	update_option('jmm_options', $jmm_options);
+        	$jmm_options['persite'] = '0'; // 0 = No
+        	$jmm_options['perpage'] = 'XXXXXX'; // blank
+        	update_option('helfjmm_options', $jmm_options);
         }
     }
-
-    // Messages, used by INIT
-	function updateMessage() {
-		echo "<div id='message' class='updated fade'><p><strong>".__('Options Updated!', 'helfjmm')."</strong></p></div>";
-		}
-
 
     // donate link on manage plugin page
     function donate_link($links, $file) {
