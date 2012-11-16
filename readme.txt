@@ -30,6 +30,14 @@ When you have registration turned on, each site can chose to use 'Per Site Regis
 
 ==Changelog==
 
+= 1.2 =
+
+13 November, 2012 by Ipstenu
+
+* Fixed issues as noted by [dokkaebi](http://wordpress.org/support/topic/problems-and-workarounds-using-v-11-on-wordpress-342)
+* Added in option for login form
+* i18n
+
 = 1.1 =
 12 October, 2012 by Ipstenu
 
