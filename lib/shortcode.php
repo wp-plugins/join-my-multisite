@@ -29,15 +29,26 @@ function jmm_activate_user( $user_id, $password, $meta )
 /* Register shortcodes */
 add_action( 'init', 'jmm_add_shortcodes' );
 function jmm_add_shortcodes() {
-    add_shortcode( 'join-my-multisite', 'jmm_shortcode_func' );
+    add_shortcode( 'join-my-multisite', 'jmm_shortcode_signuppage_func' );
+    add_shortcode( 'join-this-site', 'jmm_shortcode_thissite_func' );
 }
 
 // [join-my-multisite] - no params
 
-function jmm_shortcode_func( $atts, $content = null ) {
-
+function jmm_shortcode_signuppage_func( $atts, $content = null ) {
     add_action( 'wp_head', 'wp_no_robots' );
     $wp_query->is_404 = false;    
     include_once( PLUGIN_DIR. '/lib/signuppage.php');
+}
 
+// [join-this-site] - no params
+function jmm_shortcode_thissite_func( $atts, $content = null ) {
+    $jmm_options = get_option( 'widget_helf-add-user-widget' );
+    
+?>
+    <form action="?jmm-join-site" method="post" id="notmember">
+    <input type="hidden" name="action" value="jmm-join-site">
+    <input type="submit" value="<?php $jmm_options['notmember'] ?>" name="join-site" id="join-site" class="button">
+    </form>
+<?php
 }
