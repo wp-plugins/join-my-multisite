@@ -33,8 +33,8 @@ When you have registration turned on, each site can chose to use 'Per Site Regis
 = 1.5.1 =
 XX March, 2013
 
-* Added before_signup_frorm()
-* Redirect wp-signup to the page you defined.
+* Added before_signup_form() - kudos @madri2
+* Redirect wp-signup to the page you defined. - kudos @madri2
 
 = 1.5 = 
 15 March, 2013
