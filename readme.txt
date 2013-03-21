@@ -3,12 +3,14 @@ Contributors: Ipstenu
 Tags: multisite, wpmu, registration, users
 Requires at least: 3.4
 Tested up to: 3.6
-Stable tag: 1.5
+Stable tag: 1.5.1
 Donate link: https://www.wepay.com/donations/halfelf-wp
 
 Allow site admins to automatically add existing users to their site, or let users decide at the click a button.
 
 == Description ==
+
+<em>This plugin is for Multisite instances only.</em>
 
 When you want to add a user to every site on your network, you've got some pretty cool plugins for that as a network admin. But sometimes you want to let your site-managers have that control, and sometimes you want to make it optional.
 
@@ -31,10 +33,11 @@ When you have registration turned on, each site can chose to use 'Per Site Regis
 ==Changelog==
 
 = 1.5.1 =
-XX March, 2013
+21 March, 2013
 
-* Added before_signup_frorm()
-* Redirect wp-signup to the page you defined.
+* Added before_signup_form() - kudos @madri2
+* Redirect wp-signup to the page you defined. - kudos @madri2
+* Check for it you're actually running Multisite (seriously, people?)
 
 = 1.5 = 
 15 March, 2013
@@ -92,6 +95,10 @@ This plugin is only network activatable. Configuration is done per-site via a pa
 None yet.
 
 == Frequently Asked Questions ==
+
+= This doesn't work if I'm not using Multisite =
+
+It's not supposed to. "Join My <em>Multisite</em>", eh?
 
 = What happens if the network doesn't allow registrations? =
 
