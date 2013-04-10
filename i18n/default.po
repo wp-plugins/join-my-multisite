@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Join My Multisite\n"
-"POT-Creation-Date: 2013-03-21 09:21-0800\n"
-"PO-Revision-Date: 2013-03-21 09:21-0800\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2013-04-09 20:00-0800\n"
+"PO-Revision-Date: 2013-04-09 20:00-0800\n"
+"Last-Translator: Mika Epstein (Ipstenu) <ipstenu@ipstenu.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -92,7 +92,9 @@ msgid "Manual: "
 msgstr ""
 
 #: ../admin/help.php:59 ../admin/settings.php:69
-msgid "Allow signed in users to join via a widget."
+msgid ""
+"Allow signed in users to join via a widget or the shortcode <code>[join-this-"
+"site]</code>."
 msgstr ""
 
 #: ../admin/help.php:60
@@ -112,7 +114,7 @@ msgstr ""
 #: ../admin/help.php:63
 msgid ""
 "Regardless of membership options, you can still use the Per Site "
-"Registration."
+"Registration page."
 msgstr ""
 
 #: ../admin/help.php:69
@@ -136,7 +138,7 @@ msgstr ""
 #: ../admin/help.php:80
 msgid ""
 "This feature is only available if your network admin has allowed "
-"regisgrations."
+"registrations."
 msgstr ""
 
 #: ../admin/help.php:81
@@ -185,42 +187,61 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: ../admin/settings.php:81
-msgid "Registration:"
-msgstr ""
-
-#: ../admin/settings.php:83
-msgid "Per-Site"
+#: ../admin/settings.php:73
+msgid ""
+"To allow users to register via a button on any page or post on your site, "
+"use the shortcode <code>[join-this-site]</code> - Simply insert it and "
+"you're good!"
 msgstr ""
 
 #: ../admin/settings.php:85
+msgid "Registration:"
+msgstr ""
+
+#: ../admin/settings.php:87
+msgid "Per-Site"
+msgstr ""
+
+#: ../admin/settings.php:89
 msgid ""
 "Check this box if you want to use a shortcode to customize per-site "
 "registration. If unchecked, registrations will be sent to the network "
 "registration page."
 msgstr ""
 
-#: ../admin/settings.php:94
+#: ../admin/settings.php:98
 msgid "&mdash; Select &mdash;"
 msgstr ""
 
-#: ../admin/settings.php:99
+#: ../admin/settings.php:103
 msgid ""
 "Users who are not logged in will be redirected to the perpage you select "
 "from the dropdowns. Only top-level pages may be used. Use the following "
 "shortcode to display the login form:"
 msgstr ""
 
-#: ../admin/settings.php:108
+#: ../admin/settings.php:112
 msgid "New User Default Role:"
 msgstr ""
 
-#: ../admin/settings.php:111
+#: ../admin/settings.php:115
 msgid "-- None --"
 msgstr ""
 
-#: ../admin/settings.php:120
+#: ../admin/settings.php:124
 msgid "Update Options"
+msgstr ""
+
+#: ../lib/shortcode.php:71
+msgid "Register For An Account"
+msgstr ""
+
+#: ../lib/shortcode.php:81
+msgid "Join This Site"
+msgstr ""
+
+#: ../lib/shortcode.php:86
+msgid "Howdy, Member!"
 msgstr ""
 
 #: ../lib/signuppage.php:47
