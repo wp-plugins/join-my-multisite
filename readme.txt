@@ -3,7 +3,7 @@ Contributors: Ipstenu
 Tags: multisite, wpmu, registration, users
 Requires at least: 3.4
 Tested up to: 3.6
-Stable tag: 1.5.1
+Stable tag: 1.5.2
 Donate link: https://www.wepay.com/donations/halfelf-wp
 
 Allow site admins to automatically add existing users to their site, or let users decide at the click a button.
@@ -20,6 +20,7 @@ By activating this plugin, you give your Site Admins the following options:
 * Have a 'Join This Site' button in a widget
 * Keep things exactly as they are
 * Create a per site registration page
+* Use a shortcode to put a 'join this site' button on any page/post.
 
 It's really that simple! 
 
@@ -31,6 +32,12 @@ When you have registration turned on, each site can chose to use 'Per Site Regis
 * [Donate](https://www.wepay.com/donations/halfelf-wp)
 
 ==Changelog==
+
+= 1.5.2 =
+9 April, 2013
+
+* New shortcode: <code>[join-this-site]</code> (was a secret, now is not!)
+* Changed div content to div jmm-content, so you can style it how you want, and not break with weird themes - kudos @madri2
 
 = 1.5.1 =
 21 March, 2013
@@ -113,6 +120,10 @@ The <code>[join-my-multisite]</code> shortcode will display a notice that regist
 First make a page for your registration. You can name it anything you want, however you can only use top-level pages (so domain.com/pagename/ and not domain.com/parentpage/childpage/). On that page, enter the shortcode <code>[join-my-multisite]</code> around any other content you want.
 
 Next, go to Users > Join My Multisite and check the box to allow for Per Site Registration. Once that option is saved, a new dropdown will appear that will let you select a top-level page on your site. Select which page, and you are good to go.
+
+= Can I put a button for signups on a page or in a post? =
+
+Yep! Use <code>[join-this-site]</code>
 
 = If I use the per-site registration, do I have to use the widget? =
 
