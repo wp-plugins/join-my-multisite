@@ -38,7 +38,7 @@ if (!defined('ABSPATH')) {
 	</style>
 
 <?php do_action( 'before_signup_form' ); ?>
-<div id="content" class="widecolumn">
+<div id="jmm-content" class="widecolumn">
 <div class="mu_register">
 <?php
 
