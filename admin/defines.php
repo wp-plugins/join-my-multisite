@@ -23,7 +23,7 @@ if (!defined('ABSPATH')) {
 
 define( 'JMM', true);
 
-load_plugin_textdomain( 'join-my-multisite', false, dirname( plugin_basename( __FILE__ ) ) . '/i18n/' );
+if ( !defined('join_my_multisite')) {define('join_my_multisite','join_my_multisite');} // Translation 
 
 defined('PLUGIN_DIR') || define('PLUGIN_DIR', realpath(dirname(__FILE__) . '/..'));
 
