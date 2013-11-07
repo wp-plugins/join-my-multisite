@@ -40,7 +40,7 @@ require_once dirname(__FILE__) . '/admin/defines.php';
 
 class JMM {
 
-    function init() {
+    public function init() {
         load_plugin_textdomain( 'join-my-multisite', false, dirname( plugin_basename( __FILE__ ) ) . '/i18n/' );
     }
 
