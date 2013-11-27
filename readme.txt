@@ -33,6 +33,13 @@ When you have registration turned on, each site can chose to use 'Per Site Regis
 
 ==Changelog==
 
+= 1.7.2 = 
+27 Nov, 2013
+
+* Removing 'None' role as an option, to prevent people from shooting themselves in the foot.
+* Translation improvement on help screen
+* Clarifying some BuddyPress things
+
 = 1.7.1 =
 07 Nov, 2013
 
@@ -178,13 +185,13 @@ By default it will pick up whatever style your theme has, so if it styles button
 
 In your theme's CSS. This is basically the default WordPress signup page, just done in short-code form, so it will default to use your site's CSS anyway. The css falls under `.mu_register` of you want to override it in your theme.
 
-= Can users sign up for a blog and an account when using the shortcode? =
+= Can users sign up for a blog and an account via this plugin? =
 
 No. That's such a massive network thing, the tinfoil hat in me didn't want to do it. You could fiddle with the signup page code, if you wanted, but I don't plan to support it.
 
 = Is this BuddyPress compatible? =
 
-As far as the BuddyPress basics go (one instance, network activated) it seems to.
+As far as the BuddyPress basics go (one instance, network activated) it seems to, however it's not supported at this time. One user reported that with BP and JMM active, they weren't getting any emails for registration, so it's probably best to be used as a 'Join if you're logged in' thing, versus a 'Sign up on this site' one.
 
 = Can I set global options? =
 
