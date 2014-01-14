@@ -4,7 +4,7 @@ Tags: multisite, wpmu, registration, users
 Requires at least: 3.4
 Tested up to: 3.5
 Stable tag: 1.0
-Donate link: https://www.wepay.com/donations/halfelf-wp
+Donate link: https://store.halfelf.org/donate/
 
 Allow site admins to automatically add existing network users to their site, or let users decide at the click a button.
 
@@ -25,7 +25,7 @@ If they decide to auto-add, then any time a logged in user visits a site, they w
 If they decide to use a 'Join This Site' button, then they can customize the button message text for users who are logged in but not members, not logged in, or already members. Don't worry, if you have registation turned off, they won't see the 'register' button.
 
 * [Plugin Site](http://halfelf.org/plugins/sitewide-comment-control/)
-* [Donate](https://www.wepay.com/donations/halfelf-wp)
+* [Donate](https://store.halfelf.org/donate/)
 
 ==Changelog==
 
